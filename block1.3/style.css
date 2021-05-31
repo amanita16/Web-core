@@ -1,0 +1,342 @@
+@font-face{
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes-Light.woff2'),
+  url('fonts/TTLakes-Light.woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes-Regular.woff2'),
+  url('fonts/TTLakes-Regular.woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes-Medium.woff2'),
+  url('fonts/TTLakes-Medium.woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes-Bold.woff2'),
+  url('fonts/TTLakes-Bold.woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+html{
+box-sizing: border-box;
+
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+body{
+  /* min-width: 320px; */
+  overflow-x: scroll;
+  font-family: 'TT Lakes',sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+ul{
+  list-style: none;
+}
+
+.header{
+  max-width: 100%;
+min-width: 320px;
+}
+.container{
+  padding: 0 15px;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 600px;
+}
+.header-inner{
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red-circle{
+  height: 40px;
+  min-width: 40px;
+  border-radius: 20px;
+ background: #FF3E79;
+  position: relative;
+}
+.red-circle a > img{
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+  
+}
+.header__logo{
+  margin-right: 20px;
+  position: relative;
+}
+.header__logo::after{
+content: "";
+position: absolute;
+height: 32px;
+width: 2px;
+ background: #EAEAEA;
+right: -20px;
+top:50%;
+transform:translate(0, -50%);
+}
+
+.services{
+  background: #F8F8F8;
+width: 100%;
+}
+.services__nav{
+  padding-bottom: 30px ;
+}
+.services__list{
+  display: flex;
+ justify-content: space-between;
+}
+.services__item{
+  margin-right: 10px;
+}
+.services__list >:last-child{
+  display: none;
+}
+.services__list > :first-child{
+  display: none;
+}
+.services__link{
+  text-decoration: none;
+  white-space:nowrap; 
+  font-size: 16px;
+  color: #7E7E82;
+display: block;
+padding: 10px 10px;
+border:2px solid transparent;
+border-radius:6px;
+transition: 2s;
+}
+.services__link:hover{
+  border:2px solid#B8FFEC;
+
+}
+.services__title{
+  padding: 30px 0;
+  font-size: 28px;
+}
+.services__discription-text{
+  padding-bottom: 20px;
+font-size: 14px;
+line-height: 20px;
+color:#1B1C21;
+width: 288px;;
+}
+.services__discription-text p:nth-last-of-type(1){
+  display: none;
+}
+.services__discription-hidden{
+  padding-left: 30px;
+  position: relative;
+font-size: 16px;
+line-height: 24px;
+margin-top: 15px;
+font-weight: 700;
+cursor: pointer;
+}
+.services__discription-hidden::before{
+  content: "";
+  height: 10px;
+width: 8px;
+position: absolute;
+left:  1%;
+top: 50%;
+transform:translate(0, -50%);
+background:url('image/arrows.svg')
+}
+.services__discription-img img{
+  max-width: 320px;
+  margin-left: -15px;
+}
+.header__mail,.header__phone,.header__user{
+  display: none;
+}
+@media(min-width:321px){
+  .header__logo::after{
+    display: none;
+  }
+}
+@media(min-width:768px){
+.container{
+    padding: 0 25px;
+   max-width: 1000px;
+  }
+  
+  .header-inner .header__logo{
+margin-right: auto;
+padding-right: 0;
+padding-left: 20px;
+  }
+  .header__logo::after{
+display: none;
+  }
+  .header__logo::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 2px;
+     background: #EAEAEA;
+    right: 100%;
+    top:50%;
+    transform:translate(0, -50%);
+    }
+  .header__menu{
+    margin-right: 20px;
+  }
+  .header__mail,.header__phone,.header__user{
+    display: block;
+  }
+  .header__mail,.header__phone,.header__user,.header__repairs{
+    margin-right: 20px;
+  }
+  .header__mail{
+    margin-right: 40px;
+  }
+  .header__mail::after{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 2px;
+     background: #EAEAEA;
+    right: -20px;
+    top:50%;
+    transform:translate(0, -50%);
+    }
+  .header__repairs{
+    margin-left: 0;
+  }
+  .services__discription{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+  }
+  .services__discription-text{
+    width: 312px;
+    padding: 0;
+  }
+  .services__discription-text p:nth-of-type(2){
+    margin-top: 20px;
+  }
+  .services__discription-hidden{
+    margin: 0;
+    margin-top: 10px;
+  }
+  .services .container{
+     padding-bottom: 30px;
+  }
+  .services__discription-img img{
+    max-width: 360px;
+
+  }
+}
+
+@media(min-width:1120px){
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+ .header {
+height: 0;
+  }
+  .header .container{
+    height: 0;
+    max-width: 1120px;
+  }
+  .header-inner{
+    justify-content: flex-end;
+    align-items:center
+  }
+  .header-inner>:not(.header__search,.header__repairs){
+    display: none;
+  }
+  .header__repairs{
+    margin-right: 160px;
+    position: relative;
+  }
+  .header__repairs::after{
+    content: "Оставить заявку";
+    width: 125px;
+    line-height: 24px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform:translate(0, -50%);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    white-space:nowrap; 
+  }
+  .header__search::after{
+    content: "Статус ремонта";
+    width: 125px;
+    line-height: 24px;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform:translate(0, -50%);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    white-space:nowrap; 
+  }
+  .services{
+    display: flex;
+    justify-content: space-between;
+  }
+.services__discription-text{
+  width: 490px;
+}
+.services__discription-text p:nth-last-of-type(1){
+  display: block;
+  margin-top: 20px;
+}
+.services__discription-text p:nth-last-of-type(3){
+display: none;
+}
+.services__discription-text p:nth-last-of-type(2){
+display: none;
+}
+.services__discription-img img{
+  max-width: 517px;
+  min-height: 160px;
+}
+.services__list >:last-child{
+  display: block;
+}
+.services__list > :first-child{
+  display: block;
+}
+.services__list{
+  
+  flex-wrap: wrap;
+}
+.services__title{
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+}
