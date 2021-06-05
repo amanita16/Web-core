@@ -106,7 +106,7 @@ html{
   flex-direction: column;
 justify-content: space-between;
 }
-  .nav__btns{
+  .nav__btn{
   border: none;
     font-size: 16px;
     font-weight: 500;
@@ -150,7 +150,7 @@ justify-content: space-between;
     max-width: 85px;
     justify-content: space-between;
   }
-  .footer__lang-btns{
+  .footer__lang-btn{
    border: none;
    background-color:inherit;
     color:#1B1C21;

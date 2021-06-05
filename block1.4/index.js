@@ -1,4 +1,4 @@
-const active = document.querySelectorAll(".nav__btns");
+const active = document.querySelectorAll(".nav__btn");
 active.forEach(function(item){
   item.classList.remove('active-btn')
   item.addEventListener("click",function(){
@@ -10,7 +10,7 @@ active.forEach(function(item){
   })
 })
 
-const activeLang = document.querySelectorAll(".footer__lang-btns");
+const activeLang = document.querySelectorAll(".footer__lang-btn");
 activeLang.forEach(function(item){
   item.classList.remove('active')
   item.addEventListener("click",function(){
