@@ -106,14 +106,16 @@ html{
   flex-direction: column;
 justify-content: space-between;
 }
-  .nav__link{
-    text-decoration: none;
+  .nav__btn{
+  border: none;
     font-size: 16px;
     font-weight: 500;
     transition: 1s;
     color:#1B1C21;
+    background-color: inherit;
+    cursor: pointer;
   }
-  .nav__link:hover{
+  .active-btn{
     color:  #7E7E82
   }
   .footer{
@@ -148,10 +150,12 @@ justify-content: space-between;
     max-width: 85px;
     justify-content: space-between;
   }
-  .footer__lang-link{
-    text-decoration: none;
+  .footer__lang-btn{
+   border: none;
+   background-color:inherit;
     color:#1B1C21;
     font-weight: 500;
+    cursor: pointer;
   }
   .active{
     color:#7E7E82;
