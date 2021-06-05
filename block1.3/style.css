@@ -184,6 +184,7 @@ background:url('image/arrows.svg')
   .header__logo::after{
     display: none;
   }
+
 }
 @media(min-width:768px){
 .container{
