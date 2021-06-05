@@ -9,5 +9,4 @@ active.forEach(function(item){
  })
  activeBtn.classList.add('active')
   })
- 
 })
