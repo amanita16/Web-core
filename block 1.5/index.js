@@ -34,7 +34,7 @@ window.addEventListener('resize', () => {
   mobileSlider();
 });
 
-function readMore() {
+function showMore() {
 const sliderVisible = document.querySelector('.swiper-slide__visible')
 const sliderHidden = document.querySelectorAll('.hidden')
 const image = document.querySelector('.swiper-slide__visible-img')
@@ -44,8 +44,6 @@ sliderHidden.forEach((item) => {
     sliderVisible.innerHTML = "Cкрыть";
     sliderVisible.style.marginTop = '40px'
   }
-
-  
  else{
     item.style.display = "none";
     sliderVisible.innerHTML = "Показать все";
@@ -55,4 +53,4 @@ sliderHidden.forEach((item) => {
 })
 // console.log(sliderHidden)
 }
-readMore()
+showMore()
