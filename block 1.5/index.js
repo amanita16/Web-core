@@ -3,7 +3,7 @@ const sliderItem = document.querySelector('.swiper-slide')
 
 function mobileSlider() {
  
-  if (window.innerWidth <= 320 && slider.dataset.mobile == 'false') {
+  if (window.innerWidth <= 475 && slider.dataset.mobile == 'false') {
     mySwiper = new Swiper(slider, {
       slidesPerView:1,
       // spaceBetween: 100,
@@ -12,14 +12,12 @@ function mobileSlider() {
       pagination: {
        	el: '.swiper-pagination',
           clickable: true,
-            },
-           
+         },   
     });
-
     slider.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth > 320) {
+  if (window.innerWidth > 475) {
     slider.dataset.mobile = 'false';
     if (slider.classList.contains('swiper-container-initialized')) {
       mySwiper.destroy();
@@ -38,19 +36,20 @@ function showMore() {
 const sliderVisible = document.querySelector('.swiper-slide__visible')
 const sliderHidden = document.querySelectorAll('.hidden')
 const image = document.querySelector('.swiper-slide__visible-img')
+
 sliderHidden.forEach((item) => {
+ 
   if (item.style.display === "none"){
     item.style.display = "block"
     sliderVisible.innerHTML = "Cкрыть";
     sliderVisible.style.marginTop = '40px'
+      image.style.transform = "rotate(180deg)"
   }
  else{
     item.style.display = "none";
     sliderVisible.innerHTML = "Показать все";
-    (sliderVisible.innerHTML === "Cкрыть")
-    image.style.transform = 'rotate(180deg)'
+    image.style.transform = "rotate(0deg)"
   }
 })
-// console.log(sliderHidden)
 }
 showMore()
