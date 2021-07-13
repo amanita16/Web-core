@@ -29,17 +29,3 @@ function footerBtn(activeLang){
 }
 footerBtn(activeLang)
 
-let p = [{"name":"Васька","goals":5,"passes":5},{"name":"Байт","goals":12,"passes":2},{"name":"Снежок","goals":2,"passes":7}]
-
-let getStatistics = function (players) {
-  let sum =  0;
-for(let j = 0; j < players.length;j++){
-  sum += players[j].goals
-}
-for(let i = 0; i < players.length;i++){
-  players[i].coefficient = players[i].goals * 2 + players[i].passes;
-  players[i].percent =Math.round(players[i].goals / sum * 100)
-};
- return players
-}
-console.log(getStatistics (p))

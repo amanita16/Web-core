@@ -1,5 +1,4 @@
 const active = document.querySelectorAll(".services__btn");
-// active.classList.remove('active')
 active.forEach(function(item){
   item.classList.remove('active')
   item.addEventListener("click",function(){
@@ -9,4 +8,4 @@ active.forEach(function(item){
  })
  activeBtn.classList.add('active')
   })
-})
+});
