@@ -231,7 +231,7 @@ justify-content: space-around;
       margin-left: 0;
     }
 }
-@media(max-width:375px) {
+@media(max-width:475px) {
   .brends-container {
     display: none;
   }
